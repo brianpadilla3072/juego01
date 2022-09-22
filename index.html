@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css.css">
+    <link rel="stylesheet" href="pantallaJuego.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="autenticacion" class="row justify-content-center">
+        <div class="log col-md-6 col-xs-3 m-auto">
+            <div class="card-body w-100 m-auto">
+                <form name="login" action="" method="post" style="margin-bottom: 5px;">
+                    <div class="input-group form-group mt-3">
+                        
+                        <input type="text" class="form-control" placeholder="Nombre" name="Nombre">
+                    </div>
+                    <div class="input-group form-group mt-3">
+                        
+                        <input type="text" class="form-control" placeholder="Telefono" name="telefono">
+                    </div>
+
+                    
+                </form>
+                
+                <div class="form-group mt-3 col-md-6 m-auto"style="margin-top: 15px; " onclick="entrar()">
+                    <button class="btn btn-block btn-social btn-facebook" style="color: #fcfcfc; background-color: #1e2638;  margin-bottom: 12px;
+                    ">
+                       Jugar
+                    </button>
+                    
+                </div>
+                
+                <div class="form-group mt-3 col-md-6 m-auto"style="margin-top: 15px; " onclick="entrar()">
+                    <button class="btn btn-block btn-social btn-facebook" style="color: #fcfcfc; background-color: #2d4373">
+                        <i class="fa fa-facebook"></i> Jugar Con facebook
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="pantallaUno" class="row justify-content-center ">
+            <h1 class="text text-center col-md-12">El Pelado Que Viene</h1>
+            <section class="personas">
+                <div class="contenedor">
+                    <article class="persona_columna">
+                        <img src="img/1509214867_160832_1509215103_album_normal.jpg
+                   " alt="">
+                    </article>
+                    <article class="persona_columna">
+                        <img src="img/64560727_434522733796727_7146704329322266624_n.jpg" alt="">
+                    </article>
+                    <article class="persona_columna">
+                        <img src="img/OIP.jpg" alt="">
+                    </article>
+                    <article class="persona_columna">
+                        <img src="img/steve-jobs-reloj-seiko.webp" alt="">
+                    </article>
+                </div>
+            </section>
+
+
+
+
+
+
+            <div class="contpreg col-md-12  justify-content-center">
+                <h1 class="pregunta text-center col-md-12">¿Cual es el pelado que viene?</h1>
+            </div>
+            <div class="respuestas justify-content-center m-auto col-md-5">
+                <div class="contbtn col-md-12" onclick="validar('Vin Diesel')">
+                    <button class="zize col-md-12 btn-primary">Vin Diesel</button>
+                </div>
+                <div class="contbtn col-md-12" onclick="validar('Andrés De Leo')">
+                    <button class="zize col-md-12 btn-primary">Andrés De Leo</button>
+                </div>
+                <div class="contbtn col-md-12" onclick="validar('La Mosca')">
+                    <button class="zize col-md-12 btn-primary">La Mosca</button>
+                </div>
+                <div class="contbtn col-md-12" onclick="validar('Steve Jobs')">
+                    <button class="zize col-md-12 btn-primary">Steve Jobs</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="ganador" class="row justify-content-center">
+            <h1 class="text-center">FELIZIDADES PUEDES PARTICIPAR DEL SORTEO DE :</h1>
+        </div>
+        <div id="perdedor" class="row justify-content-center m-auto">
+            <h1 class="text-center m-auto">Mala suerte, puedes volver a intentar</h1>
+            <button class="btn-primary m-auto" onclick="VoverIntentar()"> Volver a intentar</button>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

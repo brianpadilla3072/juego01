@@ -1,0 +1,79 @@
+body{
+   overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.text{
+    color: black;
+    padding: 0%;
+    height: 9vh;
+}
+.fotos{
+    background-color: blue;
+    height: 40vh;
+    padding: 0%;
+}
+.personas{
+   
+    margin: auto;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.persona_columna{
+    margin: 1px;
+    width: 25vw;
+    grid-row: none;
+}
+.personas .contenedor{
+    display: grid;
+    grid-row: none;
+}
+@media(min-width:520px){
+    .personas .contenedor{
+        grid-template-columns: repeat(2.50%);
+    }
+}
+
+
+
+
+.pregunta{
+    color: rgb(24, 23, 23);
+    height: 9vh;
+    margin: 9px;
+}
+.respuestas{
+height: 40vh;
+background-color: #fcfcfc00;
+}
+.zize{
+height: 74%;
+border-radius: 25px;
+
+}
+.contbtn{
+    padding-bottom: 1%;
+    height: 27%;
+
+}
+#ganador{
+    display: none;
+}
+#perdedor{
+    display: none;
+}
+#pantallaUno{
+    display: none;
+}
+#pantallaUno{
+    display: none;
+}
+#autenticacion{
+    display: block;
+}
